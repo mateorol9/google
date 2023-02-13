@@ -100,8 +100,10 @@ main .logo__container {
     align-items: center;
     height: 100%;
 }
-main .logo__imagen{
-    width: 272px;
+main .logo__imagen {
+    width: 60vw;
+    max-width: 272px;
+    min-width: 150px;
     height: auto;
 }
 /*---------------------Bar de google----------------------*/ 
@@ -275,39 +277,4 @@ footer .footer-right__list {
 footer a
 {
     color: var(--gray);
-}
-
-@media (max-width: 900px) {
-    .footer-container__list {
-        flex-direction: column;
-}
-    footer ul {
-        align-items: center;
-        justify-content: center;
-    } 
-    li.footer-left__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 90px;
-        height: 40px;
-    } 
-    li.footer-right__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 90px;
-        height: 100%;
-        min-height: 20px;
-        max-height: 40px;
-    } 
-    
-}
-
-@media (max-width: 500px) {
-    footer ul {
-    margin: 4px;
-    row-gap: 0px;
-    column-gap: 15px;
-}
 }
