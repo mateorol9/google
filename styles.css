@@ -101,7 +101,7 @@ main .logo__container {
     height: 100%;
 }
 main .logo__imagen {
-    width: 60vw;
+    width: 55vw;
     max-width: 272px;
     min-width: 150px;
     height: auto;
@@ -112,15 +112,15 @@ main .search__form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 140px;
-    padding: 2rem;
+    min-height: 136px;
+    padding: 20px;
     text-align: center;
 }
 
 main .bar__container {
-    width: 100%;
+    width: 96%;
     max-width: 580px;
-    min-width: 280px;
+    min-width: 270px;
     height: 44px;
     border: var(--border);
     border-radius: 100px;
@@ -174,7 +174,7 @@ main .bar__container:has(.bar__input-text:focus)
     justify-content: center;
 }
 .bar__icono-lupa {
-    width: 2rem;
+    width: 24px;
     z-index: 10;
     fill: var(--gray);
 }
@@ -211,7 +211,7 @@ main .bar__svg-mic
 } 
 main .bton__input {
     width: 154px;
-    min-width: 54px;
+    min-width: 56px;
     height: 36px;
     padding: 0 16px;
     font-size: 1.4rem;
