@@ -39,6 +39,7 @@ header {
     width: 100%;
     min-width: 360px;
     height: 60px;
+    margin-block-end: 16px;
 }
 
 header .header__nav {
