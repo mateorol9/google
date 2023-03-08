@@ -24,7 +24,11 @@
     } 
     
 }
-
+@media (max-width: 768px) {
+ body {
+  display: unset;
+ }
+}
 @media (max-width: 500px) {
     footer ul {
     margin: 4px;
