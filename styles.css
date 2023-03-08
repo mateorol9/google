@@ -114,7 +114,7 @@ main .logo__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: min-content;
 }
 main .logo__imagen {
     width: 55vw;
