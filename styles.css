@@ -1,0 +1,296 @@
+:root {
+    --bg-main: #202124;
+    --white: #fff;
+    --btn-white: #e8eaed;
+    --soft-gray: rgba(232,234,237,.08);
+    --gray: #9aa0a6;
+    --btn-black: #303134;
+    --border: 1px solid #5f6368;
+    --bg-footer: #171717;
+ }
+ *{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size: 62.5%;
+
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: var(--bg-main);   
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover 
+{
+    text-decoration-line: underline;  
+}
+
+/*--------------------------Header de la pagina-----------------------*/
+
+header {
+    grid-area: header;
+    inset-block-start: 0;
+    width: 100%;
+    min-width: 360px;
+    height: 60px;
+    margin-block-end: 16px;
+}
+
+header .header__nav {
+    display: flex;
+    justify-content: end;
+    height: inherit;
+}
+header nav .header__list{
+    display: flex;
+    width: 25rem;
+    height: auto;
+    list-style: none;
+    gap: 16px;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+}
+header nav .header__list-item
+{
+    cursor: pointer;
+}
+header nav .menu-profile{
+    border-radius: 50%;
+}
+
+header nav .header__list-link {
+    color: var(--white);
+}
+header nav .header__list-item.menu-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+header nav .header__list-item.menu-icon a:hover {
+    background-color: var(--soft-gray);
+}
+
+header nav .menu-icon svg {
+    fill: var(--white);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+/* main - Logo Google*/
+main {
+    grid-area: main;
+    display: flex;
+    width: 100%;
+    min-width: 360px;
+    height: 100%;
+    max-height: 280px;
+    text-align: center;
+    flex-direction: column;
+    
+}
+main .logo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+main .logo__imagen {
+    width: 55vw;
+    max-width: 272px;
+    min-width: 150px;
+    height: auto;
+}
+/*---------------------Bar de google----------------------*/ 
+main .search__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 136px;
+    padding: 20px;
+    text-align: center;
+}
+
+main .bar__container {
+    width: 96%;
+    max-width: 580px;
+    min-width: 270px;
+    height: 44px;
+    border: var(--border);
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+main label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+main .bar__input-text {
+    background: #202124;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: var(--btn-white);
+}
+main .bar__container:hover
+{
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223,225,229,0);
+}
+main .bar__container:hover .bar__input-text,
+.bar__input-text:focus {
+    background-color: #303134;
+}
+main .bar__container:has(.bar__input-text:focus)
+{
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223,225,229,0);
+}
+
+
+.bar__lupa-container
+{
+    width: 10%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bar__icono-lupa {
+    width: 24px;
+    z-index: 10;
+    fill: var(--gray);
+}
+/*butons right mic and camera*/
+main .bar__svg-mic
+{
+
+    width: 8%;
+    min-width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+}
+.button__input-search {
+    display: flex;
+    gap: 4px;
+    width: 109px;
+}
+.button__input-search svg, .button__input-search img {
+    display: inline-block;
+    width: 24px;
+}
+/*----------------- Botones de google -------------------*/ 
+ main .main-bottons{   
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+    height: 76px;
+    padding-top: 18px;
+    align-items: center;
+} 
+main .bton__input {
+    width: 154px;
+    min-width: 56px;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 1.4rem;
+    line-height: 27px;
+    color: var(--btn-white);
+    background-color: var(--btn-black);
+    border: 1px solid #303134;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+} 
+main .bton__input:hover 
+{
+    border: var(--border);
+}
+/*----------------- footer -------------------*/ 
+
+
+footer
+{
+    width: 100%;
+    min-width: 360px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    background-color: var(--bg-footer);
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    row-gap: 12px;
+    column-gap: 30px;
+}
+.footer-country {
+    display: block;
+    width: 100%;
+    min-width: 320px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: var(--gray);
+    border-bottom: 1px solid #3c4043;
+}
+.footer-container__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 46px;
+    padding: 0 20px;
+}
+footer .footer-left__list {
+    justify-self: left;
+}
+footer .footer-right__list {
+    justify-self: right;
+}
+footer a
+{
+    color: var(--gray);
+}
