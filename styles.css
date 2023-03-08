@@ -294,8 +294,3 @@ footer a
 {
     color: var(--gray);
 }
-@media (max-width: 768px) {
- body {
-  display: unset;
- }
-}
