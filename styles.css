@@ -134,16 +134,17 @@ main .search__form {
 }
 
 main .bar__container {
-    width: 96%;
-    max-width: 580px;
-    min-width: 270px;
-    height: 44px;
-    border: var(--border);
-    border-radius: 100px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 96%;
+    max-width: 580px;
+    min-width: 270px;
+    height: 44px;
+    padding-inline: 5px;
+    border: var(--border);
+    border-radius: 100px;
 } 
 
 main label {
